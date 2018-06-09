@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.fx.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<article>
+			<div class="mui-slider mui-slider-detail">
+				<div class="mui-slider-group mui-slider-loop">
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#"><img src="images/detail_02.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="images/detail_02.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="images/detail_02.jpg" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="images/detail_02.jpg" /></a>
+					</div>
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#"><img src="images/detail_02.jpg" /></a>
+					</div>
+				</div>
+				<span></span>
+			</div>
+			<div class="detail-name flex">
+				<div>木板沙发板多层板包装箱板时间的话</div>
+				<span>￥89.00</span>
+			</div>
+			<div class="spacing"></div>
+			<div class="detail-buy flex">
+				<div>
+					购买数量<span>(库存8000)</span>
+				</div>
+				<div>
+					<button class="minus">-</button>
+					<input type="text" name="" class="num" id="" value="1" />
+					<button class="plus">+</button>
+				</div>
+				<button class="add-shoppingCart">加入购物车</button>
+			</div>
+			<div class="spacing"></div>
+			<section class="detail-table">
+				<table border="0" cellspacing="" cellpadding="">
+					<tr>
+						<td class="name1">品牌</td>
+						<td class="content1">E0</td>
+						<td class="name2">环保等级</td>
+						<td class="content2">E0</td>
+					</tr>
+					<tr>
+						<td class="name1">规格</td>
+						<td class="content1">1220*2440*5mm</td>
+						<td class="name2">阻燃等级</td>
+						<td class="content2">B0</td>
+					</tr>
+					<tr>
+						<td class="name1">芯板材质</td>
+						<td class="content1">杨木</td>
+						<td class="name2">厚度公差</td>
+						<td class="content2">0.2mm</td>
+					</tr>
+					<tr>
+						<td class="name1">包装规格</td>
+						<td class="content1">220张/件</td>
+						<td class="name2">含水率</td>
+						<td class="content2">12%</td>
+					</tr>
+				</table>
+			</section>
+			<div class="spacing"></div>
+			<section class="details">
+				<div class="detail-tab flexa">
+					<div class="active">
+						<span class="fa fa-map-marker"></span>
+						产品详情
+					</div>
+					<div>
+						<span class="fa fa-map-marker"></span>
+						物流信息
+					</div>
+					<div>
+						<span class="fa fa-map-marker"></span>
+						检测报告
+					</div>
+				</div>
+				<hr />
+				<ul class="detail-content">
+					<li style="display: block;">
+						<img src="images/detail_05.jpg"/>
+					</li>
+					<li>
+						<img src="images/detail_05.jpg"/>
+					</li>
+					<li>
+						<img src="images/detail_05.jpg"/>
+					</li>
+				</ul>
+			</section>
+		</article>
+		<div class="bottom-spacing"></div>
+		<nav class="nav-bottom flex">
+			<a href="index.html">
+				<img src="images/icon1.png" class="choose1"/>
+				<img src="images/icon2.png" class="choose2"/>
+				<p>首页</p>
+			</a>
+			<a href="classify.html" class="active">
+				<img src="images/icon3.png" class="choose1"/>
+				<img src="images/icon4.png" class="choose2"/>
+				<p>分类</p>
+			</a>
+			<a href="order.html">
+				<img src="images/icon5.png" class="choose1"/>
+				<img src="images/icon6.png" class="choose2"/>
+				<p>定制</p>
+			</a>
+			<a href="shoppingCart.html" class="shoppong-icon">
+				<img src="images/icon7.png" class="choose1"/>
+				<img src="images/icon8.png" class="choose2"/>
+				<p>购物车</p>
+				<span>2</span>
+			</a>
+			<a href="people.html">
+				<img src="images/icon9.png" class="choose1"/>
+				<img src="images/icon10.png" class="choose2"/>
+				<p>我的</p>
+			</a>
+		</nav>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			document.querySelector('.mui-slider-detail').addEventListener('slide', function(event) {
+				$('.mui-slider-detail span').html(event.detail.slideNumber+1+'/'+ ($('.mui-slider-detail').find('.mui-slider-item').length-2));
+			});
+		</script>
+	</body>
+
+</html>

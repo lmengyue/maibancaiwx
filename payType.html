@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>选择支付方式</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="background: #f4f4f4;">
+		<div class="pay-explain">
+			<p>1、此次付款需要 2888元。 </p>
+			<p>2、微信支付达到上限，不支持线上支付。</p>
+		</div>
+		<div class="spacing"></div>
+		<label class="custom-box flex" style="padding-right: 4.6rem;height: 1.1rem;">
+            <input name="pay" type="radio" id="weixin" value=""/>
+            <label class="custom-icon" for="weixin"></label>
+            <img src="images/payType_03.jpg"/>
+            <span style="display: block;width: 1.2rem;">微信</span>
+        </label>
+        <div class="spacing"></div>
+        <label class="custom-box flex" style="padding-right: 4.6rem;height: 1.1rem;">
+            <input name="pay" type="radio" id="xianxia" value=""/>
+            <label class="custom-icon" for="xianxia"></label>
+            <img src="images/payType_06.jpg"/>
+            <span style="display: block;width: 1.2rem;">线下支付</span>
+        </label>
+		
+		<button class="pay-btn">确定</button>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

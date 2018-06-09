@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Document
+            </title>
+        </meta>
+        <style media="screen" type="text/css">
+            .custom-icon{
+                padding: 5px 10px;
+                background: url(images/radio2.png) no-repeat;
+                cursor: pointer;
+            }
+
+            .custom-box > input[type=radio]:checked ~ .custom-icon{
+                background: url(images/radio1.png) no-repeat;
+            }
+
+            .custom-box > input[type=radio]{
+                display: none;
+            }
+            .custom-box > input[type=checkbox]:checked ~ .custom-icon{
+                background: url(images/radio1.png) no-repeat;
+            }
+
+            .custom-box > input[type=checkbox]{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <label class="custom-box">
+            <input name="pay" type="radio" value="a"/>
+            <span class="custom-icon">A</span>
+        </label>
+        <label class="custom-box">
+            <input name="pay" type="radio" value="b"/>
+            <span class="custom-icon">B</span>
+        </label>
+        <label class="custom-box">
+            <input name="rr" type="checkbox" value="a"/>
+            <span class="custom-icon">A</span>
+        </label>
+        <label class="custom-box">
+            <input name="rr" type="checkbox" value="b"/>
+            <span class="custom-icon">B</span>
+        </label>
+    </body>
+</html>
